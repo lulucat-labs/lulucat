@@ -1,2 +1,2 @@
 # lulucat
-Lulucat is an open-source Web3 airdrop task platform built for airdrop hunters, offering centralized management of a large number of X, Discord, email, and wallet accounts, and efficient task automation in fingerprint browser environments.
+lulucat 是一个开源的 Web3 撸空投平台，专为批量任务执行设计，支持在指纹浏览器环境中运行自动化任务脚本，提供 X、Discord、邮箱和钱包账户的统一管理。
