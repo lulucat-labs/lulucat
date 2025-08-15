@@ -1,0 +1,26 @@
+{
+   "action": {
+      "default_popup": "src/popup.html"
+   },
+   "background": {
+      "service_worker": "src/background.js"
+   },
+   "description": "Join the Stork Network",
+   "icons": {
+      "128": "icon/128.png",
+      "16": "icon/16.png",
+      "32": "icon/32.png",
+      "48": "icon/48.png",
+      "96": "icon/96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2t1K0DVATFr5iBVFdbRgv7tEI+YJyQ6NZbACj4cWRDYheMdAaigTkhr6tzC8kOJTQTgCnALr4FsoePFT4u63/KEfRWnz+3kTmjCPiIxCBF9OiQNdB8buKRaGgaCwtmrklJubuyDWHl7wGdbKXEZuoyARaMvg02t4w+18oNatHVz5NeotQAaEyiII30VFGjYNUxXUV7aXJJ8Y821ORWDiZWjTh0otfnJaNL5vhb03g+AiOMRMDuf/70dhpzUhstP9k3O9HONWtCFn8svpQgw7qZr2fBE+oqHQMy5okYq7DeBYjUEFih9HiwdKNwAzSS/fowhsveeUWhxKTlYXMA4ywQIDAQAB",
+   "manifest_version": 3,
+   "name": "Stork Verify",
+   "permissions": [ "alarms", "identity", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "public/animations/ProfileHeader.json" ]
+   } ]
+}

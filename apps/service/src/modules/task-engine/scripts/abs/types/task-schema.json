@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "registerABS": {
+            "type": "boolean",
+            "title": "注册ABS",
+            "description": "注册ABS账户"
+        },
+        "exchangeToOkx": {
+            "type": "boolean",
+            "title": "从 OKX 提币",
+            "description": "将资产兑换到OKX"
+        },
+        "zKBridgeABS": {
+            "type": "boolean",
+            "title": "跨链到 ABS",
+            "description": "通过ZK桥跨链ABS代币"
+        },
+        "evmTransferABS": {
+            "type": "boolean",
+            "title": "(勋章)账户充值",
+            "description": "将代币从OKX转移到ABS钱包"
+        },
+        "absToAbsETHSwap": {
+            "type": "boolean",
+            "title": "(勋章)内部交易",
+            "description": "将ABS代币兑换为ABS ETH"
+        },
+        "authX": {
+            "type": "boolean",
+            "title": "(勋章)连接 X",
+            "description": "完成X账号认证"
+        },
+        "authDiscord": {
+            "type": "boolean",
+            "title": "(勋章)连接 Discord",
+            "description": "完成Discord账号认证"
+        },
+        "discoverVote": {
+            "type": "boolean",
+            "title": "(勋章)投票",
+            "description": "在Discover平台完成投票"
+        }
+    }
+}

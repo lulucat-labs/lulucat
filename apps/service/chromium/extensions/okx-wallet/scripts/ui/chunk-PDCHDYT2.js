@@ -1,0 +1,7 @@
+import{b as T}from"./chunk-AZH4OWJP.js";import{a as b}from"./chunk-QTWRPB4V.js";import{Sa as E}from"./chunk-LUYLQDIU.js";import{a as I}from"./chunk-VLKJDIZ5.js";import{B as P,oa as H}from"./chunk-KBQXBPIW.js";import{E as s,H as R,K as m,O}from"./chunk-364XNTHB.js";import{U as D}from"./chunk-W7JONHX2.js";import{a as u}from"./chunk-PDSGFBX4.js";import{f as p,o as t,q as o}from"./chunk-FJHLV356.js";t();o();t();o();var K=p(u()),$=p(I());t();o();var h=p(u());t();o();H();O();var M="www.okx.com",C="www.oklink.com",N="/web3/explorer";function L(r){if(!P(r))return"";if(E())return r;try{let n=new URL(r);if([M,C].map(e=>`https://${e}`).find(e=>s(r,e))||s(r,m.href)){let e=r.replace(n.origin,"");return e=n.host===C?`${N}${e}`:e,R(e)}return r}catch{return r}}function y(r){return r==="_blank"?"nofollow":"noreferrer"}t();o();var c=p(u());var U=r=>{let[n,i]=(0,c.useState)(r);return(0,c.useEffect)(()=>{let a=L(r);i(a)},[r]),n},k=U;t();o();var l=p(u());O();function S(r,n){let[i,a]=(0,l.useState)(r);return(0,l.useEffect)(()=>{let e=s(n,m.href);a(T||!e||b()?"_blank":r)},[r,n]),i}var v=({children:r,href:n,target:i="_self",withLangPath:a=!0,handleStyle:e=!0,disable:_=!1,...g})=>{let w=k(n),x=S(i,w),A=y(x);return _?h.default.createElement("span",{...g},r):h.default.createElement(D,{href:w,target:x,withLangPath:a,handleStyle:e,rel:A,...g},r)},d=v;var xr=d;export{xr as a};
+
+window.inOKXExtension = true;
+window.inMiniApp = false;
+window.ASSETS_BUILD_TYPE = "publish";
+
+//# sourceMappingURL=chunk-PDCHDYT2.js.map

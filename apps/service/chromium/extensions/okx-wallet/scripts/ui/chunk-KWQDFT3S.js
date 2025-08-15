@@ -1,0 +1,7 @@
+import{c as u}from"./chunk-CLAWFLRW.js";import{b as l}from"./chunk-NQYDGSER.js";import{Ia as r}from"./chunk-B32MCU7F.js";import{f as a}from"./chunk-2BGRD7AD.js";import{Nb as i,hc as A}from"./chunk-Q23SA7M6.js";import{f as T,o as s,q as p}from"./chunk-FJHLV356.js";s();p();var m=T(l());A();var O={[r.TOKEN_METHOD_APPROVE]:{constant:!1,inputs:[{name:"spender",type:"address"},{name:"value",type:"uint256"}],name:"approve",outputs:[{name:"",type:"bool"}],payable:!1,stateMutability:"nonpayable",type:"function"},[r.TOKEN_METHOD_INCREASE_ALLOWANCE]:{constant:!1,inputs:[{name:"spender",type:"address"},{name:"addedValue",type:"uint256"}],name:"increaseAllowance",outputs:[{name:"success",type:"bool"}],payable:!1,stateMutability:"nonpayable",type:"function"}},I=e=>[a.AUTHORIZATION,a.NFT_AUTHORIZATION,a.COMMON_APPROVE].includes(e),b=e=>[a.CANCEL_AUTHORIZATION,a.NFT_CANCEL_AUTHORIZATION].includes(e),c=({spender:e,value:n,type:t})=>!e||i(n,0)?"":m.default.encodeMethod(O[t],[e,n]);function R(e,{approveAmount:n},t){if(t){if(t.name!==r.TOKEN_METHOD_APPROVE&&t.name!==r.TOKEN_METHOD_INCREASE_ALLOWANCE)throw new Error(`Invalid data; should be 'approve' method, but instead is '${t.name}'`)}else throw new Error("Invalid data");let o=u(t);return c({spender:o,value:n,type:t.name})}var M=(e,n=24)=>e?.length>n?`${e.slice(0,n)}...`:e;export{I as a,b,R as c,M as d};
+
+window.inOKXExtension = true;
+window.inMiniApp = false;
+window.ASSETS_BUILD_TYPE = "publish";
+
+//# sourceMappingURL=chunk-KWQDFT3S.js.map

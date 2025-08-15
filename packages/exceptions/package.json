@@ -1,0 +1,20 @@
+{
+  "name": "@lulucat/exceptions",
+  "version": "1.0.0",
+  "description": "lulucat exceptions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "lulucat labs",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b",
+    "dev": "tsc -b --watch"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
+}

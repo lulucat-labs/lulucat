@@ -1,0 +1,43 @@
+---
+description: Domain Concepts
+alwaysApply: false
+---
+# LuluCat Web Domain Concepts
+
+## Core Business Entities
+
+### Task System
+- **Task**: A unit of work that needs to be executed, typically related to automation
+- **Task Results**: Outcomes of completed tasks
+- **Task Log**: Records of task execution details and progress
+
+### Account Management
+- **Account Group**: Collection of related accounts
+- **Twitter Account**: Twitter social media accounts managed in the system
+- **Discord Account**: Discord accounts managed in the system
+- **Email Account**: Email accounts managed in the system
+
+### Blockchain Related
+- **EVM Wallet**: Ethereum Virtual Machine compatible wallet
+- **Wallet Generation**: Process of creating new blockchain wallets
+
+### Browser Automation
+- **Browser Context**: Environment configurations for browser automation
+- **Browser Fingerprint**: Unique browser identification parameters
+- **Proxy IP**: Proxy servers used for web requests
+
+### Project Management
+- **Project**: Container for organizing related tasks
+- **Script**: Predefined automation scripts that can be executed
+
+## Key Workflows
+- Account creation and management
+- Task creation, execution, and monitoring
+- Wallet generation and management
+- Proxy configuration and usage
+
+## Integration Points
+- Browser automation tools
+- Blockchain networks
+- Social media platforms
+- Email services

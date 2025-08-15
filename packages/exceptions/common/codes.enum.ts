@@ -1,0 +1,68 @@
+/**
+ * 任务引擎异常代码枚举
+ *
+ * 10000-10999: 通用异常
+ * 11000-11999: 钱包相关异常
+ * 12000-12999: X(Twitter)相关异常
+ * 13000-13999: Discord相关异常
+ * 14000-14999: 邮箱相关异常
+ * 15000-15999: IP/代理相关异常
+ */
+export enum TaskExceptionCode {
+  // 通用异常 (10000-10999)
+  UNKNOWN_ERROR = 10000, // 未知错误
+  SCRIPT_EXECUTION_FAILED = 10001, // 脚本执行失败
+  TIMEOUT_ERROR = 10002, // 操作超时
+  INVALID_PARAMETER = 10003, // 无效参数
+  RESOURCE_NOT_FOUND = 10004, // 资源未找到
+  PERMISSION_DENIED = 10005, // 权限被拒绝
+  PAGE_LOAD_FAILED = 10006, // 页面加载失败
+  PROGRAM_INTERRUPTED = 10007, // 程序中断
+
+  // 钱包相关异常 (11000-11999)
+  WALLET_CONNECTION_FAILED = 11000, // 钱包连接失败
+  WALLET_INSUFFICIENT_FUNDS = 11001, // 钱包余额不足
+  WALLET_TRANSACTION_FAILED = 11002, // 钱包交易失败
+  WALLET_INVALID_ADDRESS = 11003, // 无效的钱包地址
+  WALLET_SIGNATURE_FAILED = 11004, // 签名失败
+  WALLET_NOT_FOUND = 11005, // 钱包未找到
+  WALLET_IMPORT_FAILED = 11006, // 钱包导入失败
+
+  // X(Twitter)相关异常 (12000-12999)
+  X_AUTHENTICATION_FAILED = 12000, // X认证失败
+  X_RATE_LIMIT_EXCEEDED = 12001, // X速率限制超出
+  X_ACCOUNT_SUSPENDED = 12002, // X账号被封禁
+  X_TWEET_FAILED = 12003, // 发推失败
+  X_FOLLOW_FAILED = 12004, // 关注失败
+  X_LIKE_FAILED = 12005, // 点赞失败
+  X_RETWEET_FAILED = 12006, // 转发失败
+  X_ACCOUNT_NOT_FOUND = 12007, // X账号未找到
+
+  // Discord相关异常 (13000-13999)
+  DISCORD_AUTHENTICATION_FAILED = 13000, // Discord认证失败
+  DISCORD_RATE_LIMIT_EXCEEDED = 13001, // Discord速率限制超出
+  DISCORD_CHANNEL_NOT_FOUND = 13002, // Discord频道未找到
+  DISCORD_SERVER_JOIN_FAILED = 13003, // 加入Discord服务器失败
+  DISCORD_MESSAGE_FAILED = 13004, // 发送Discord消息失败
+  DISCORD_REACTION_FAILED = 13005, // 添加Discord反应失败
+  DISCORD_VERIFICATION_FAILED = 13006, // Discord验证失败
+  DISCORD_ACCOUNT_NOT_FOUND = 13007, // Discord账号未找到
+
+  // 邮箱相关异常 (14000-14999)
+  EMAIL_SEND_FAILED = 14000, // 邮件发送失败
+  EMAIL_RECEIVE_FAILED = 14001, // 邮件接收失败
+  EMAIL_VERIFICATION_FAILED = 14002, // 邮箱验证失败
+  EMAIL_NOT_FOUND = 14003, // 邮箱未找到
+  EMAIL_AUTHENTICATION_FAILED = 14004, // 邮箱认证失败
+  EMAIL_INVALID_FORMAT = 14005, // 邮箱格式无效
+  EMAIL_INBOX_FULL = 14006, // 邮箱收件箱已满
+
+  // IP/代理相关异常 (15000-15999)
+  IP_BLOCKED = 15000, // IP被封禁
+  IP_RATE_LIMITED = 15001, // IP速率受限
+  PROXY_CONNECTION_FAILED = 15002, // 代理连接失败
+  PROXY_AUTHENTICATION_FAILED = 15003, // 代理认证失败
+  PROXY_INVALID = 15004, // 代理配置无效
+  GEOLOCATION_RESTRICTED = 15005, // 地理位置受限
+  IP_NOT_FOUND = 15006, // IP未找到
+}

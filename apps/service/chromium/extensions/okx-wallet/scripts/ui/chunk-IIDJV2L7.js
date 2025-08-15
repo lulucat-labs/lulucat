@@ -1,0 +1,7 @@
+import{a as u}from"./chunk-TTTTJYM7.js";import{b as r,d as y}from"./chunk-IYVZOFWF.js";import{A as s,n as f,o as c}from"./chunk-E44TZGUB.js";import{T as d,d as _}from"./chunk-W7JONHX2.js";import{a as n}from"./chunk-PDSGFBX4.js";import{f as l,o as t,q as e}from"./chunk-FJHLV356.js";t();e();var x=({img:i,darkImg:m})=>f()===_.dark?m:i,v=x;t();e();var o=l(n()),h=l(y());var T=({show:i})=>o.default.createElement(d,{className:(0,h.default)("okds-information-circle content-contrast cursor-pointer"),style:{fontSize:16},onClick:()=>{i&&i(!0)},a11yText:r("swaptrade_modal_dialog_title_priority")}),M=()=>{let{isSm:i}=u(),[m,a]=(0,o.useState)(!1);return i?o.default.createElement(o.default.Fragment,null,o.default.createElement(T,{show:a}),o.default.createElement(c.Tip,{visible:m,title:r("swaptrade_modal_dialog_title_priority"),confirmText:r("commonall_text_btn_ok_active"),onConfirm:()=>{a(!1)}},r("swaptrade_modal_dialog_desc_priority_meme"))):o.default.createElement(s,{placement:s.DIRECTION.topRight,title:r("swaptrade_modal_dialog_desc_priority_meme"),width:246},o.default.createElement(T,null))};t();e();var w=l(n());t();e();var g={root:"_root_1m4jw_1"};var J=()=>w.default.createElement("span",{className:g.root},r("swaptrade_modal_dialog_title_priority"));export{v as a,M as b,J as c};
+
+window.inOKXExtension = true;
+window.inMiniApp = false;
+window.ASSETS_BUILD_TYPE = "publish";
+
+//# sourceMappingURL=chunk-IIDJV2L7.js.map

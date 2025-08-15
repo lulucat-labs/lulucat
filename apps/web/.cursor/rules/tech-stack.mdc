@@ -1,0 +1,50 @@
+---
+alwaysApply: true
+---
+# LuluCat Client Technical Stack
+
+## Core Framework
+- This project is built with [UmiJS](https://umijs.org/) and [@umijs/max](https://umijs.org/docs/max/introduce) (version 4.1.1)
+- React 18 for UI components
+- TypeScript for type safety
+
+## UI Framework
+- [Ant Design](https://ant.design/) (v5.13.2) - Main UI component library
+- [@ant-design/pro-components](https://procomponents.ant.design/) (v2.6.48) - Advanced components for Pro applications
+- [antd-style](https://github.com/ant-design/antd-style) - For styling components
+
+## Project Structure
+- `src/` - Main source code directory
+  - `components/` - Shared components
+  - `pages/` - Page components organized by route
+  - `services/` - API service functions
+  - `locales/` - Internationalization files
+- `config/` - Configuration files for the application
+
+## State Management
+- Uses React Hooks and Context for state management
+
+## API Communication
+- REST API integration via services
+
+## Development Tools
+- ESLint and Prettier for code linting and formatting
+- Jest for testing
+- Husky for git hooks
+
+## Other Libraries
+- `ethers` (v5.7.2) - Ethereum JavaScript library
+- `lodash` - Utility functions
+- `moment` - Date manipulation
+
+## File Naming Conventions
+- React components use PascalCase (e.g., `AccountList.tsx`)
+- Hooks use camelCase with 'use' prefix (e.g., `useTaskPolling.ts`)
+- Service files use kebab-case (e.g., `task-result.ts`)
+- Type definitions typically in `.d.ts` files or alongside components
+
+## Code Style Conventions
+- TypeScript with strict type checking
+- TSX for React components
+- Semi-colons required
+- Use of ES6+ features

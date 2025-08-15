@@ -1,0 +1,7 @@
+import{b as f,o as p,q as s}from"./chunk-FJHLV356.js";function c(r){this.message=r}function h(r){var e=r.replace(/-/g,"+").replace(/_/g,"/");switch(e.length%4){case 0:break;case 2:e+="==";break;case 3:e+="=";break;default:throw"Illegal base64url string!"}try{return function(n){return decodeURIComponent(l(n).replace(/(.)/g,function(t,a){var o=a.charCodeAt(0).toString(16).toUpperCase();return o.length<2&&(o="0"+o),"%"+o}))}(e)}catch{return l(e)}}function i(r){this.message=r}function w(r,e){if(typeof r!="string")throw new i("Invalid token specified");var n=(e=e||{}).header===!0?0:1;try{return JSON.parse(h(r.split(".")[n]))}catch(t){throw new i("Invalid token specified: "+t.message)}}var l,v,u=f(()=>{p();s();c.prototype=new Error,c.prototype.name="InvalidCharacterError";l=typeof window<"u"&&window.atob&&window.atob.bind(window)||function(r){var e=String(r).replace(/=+$/,"");if(e.length%4==1)throw new c("'atob' failed: The string to be decoded is not correctly encoded.");for(var n,t,a=0,o=0,d="";t=e.charAt(o++);~t&&(n=a%4?64*n+t:t,a++%4)?d+=String.fromCharCode(255&n>>(-2*a&6)):0)t="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".indexOf(t);return d};i.prototype=new Error,i.prototype.name="InvalidTokenError";v=w});export{v as a,u as b};
+
+window.inOKXExtension = true;
+window.inMiniApp = false;
+window.ASSETS_BUILD_TYPE = "publish";
+
+//# sourceMappingURL=chunk-XXICVAVV.js.map

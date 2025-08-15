@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- 不要尝试执行启动项目服务的命令来验证代码修改结果，用户在开发过程中已启动项目服务

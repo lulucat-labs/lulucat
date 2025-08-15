@@ -1,0 +1,58 @@
+{
+  "name": "@lulucat/tdk",
+  "version": "1.0.0",
+  "description": "lulucat tdk",
+  "author": "lulucat labs",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./wallet": {
+      "types": "./dist/wallet/index.d.ts",
+      "default": "./dist/wallet/index.js"
+    },
+    "./browser": {
+      "types": "./dist/browser/index.d.ts",
+      "default": "./dist/browser/index.js"
+    },
+    "./defi": {
+      "types": "./dist/defi/index.d.ts",
+      "default": "./dist/defi/index.js"
+    },
+    "./network": {
+      "types": "./dist/network/index.d.ts",
+      "default": "./dist/network/index.js"
+    },
+    "./social-media": {
+      "types": "./dist/social-media/index.d.ts",
+      "default": "./dist/social-media/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "default": "./dist/utils/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b",
+    "dev": "tsc -b --watch"
+  },
+  "dependencies": {
+    "@lulucat/exceptions": "workspace:*",
+    "@reservoir0x/relay-sdk": "^1.6.10",
+    "axios": "^1.7.9",
+    "crypto-js": "^4.2.0",
+    "ethers": "^6.11.5",
+    "playwright": "^1.43.0",
+    "tslib": "^2.8.1",
+    "viem": "^2.23.13",
+    "web3": "^4.16.0"
+  }
+}

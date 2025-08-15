@@ -1,0 +1,7 @@
+import{a as g}from"./chunk-TTTTJYM7.js";import{ea as m,oa as S}from"./chunk-KBQXBPIW.js";import{O as M,a as l}from"./chunk-364XNTHB.js";import{a}from"./chunk-PDSGFBX4.js";import{f as w,o,q as i}from"./chunk-FJHLV356.js";o();i();var s=w(a());function E(){let[r,n]=(0,s.useState)(!1);function e(f){(0,s.startTransition)(()=>{n(f)})}let t=()=>{e(!1)},c=()=>{e(!0)},h=(0,s.useMemo)(()=>({onTouchStart:c,onTouchEnd:t,onTouchMove:t,onMouseDown:c,onMouseUp:t,onMouseLeave:t}),[r]);return{scale:r,animationEvent:h}}o();i();var u=w(a());o();i();var d=w(a());S();M();var R=()=>{let[r,n]=(0,d.useState)({width:l()?0:window?.innerWidth,height:l()?0:window?.innerHeight});return(0,d.useEffect)(()=>{let e=m(()=>{(r.width!==window.innerWidth||r.height!==window.innerHeight)&&n({width:window.innerWidth,height:window.innerHeight})});return window.addEventListener("resize",e),()=>{window.removeEventListener("resize",e)}},[]),{size:r}},v=R;var y=r=>{let{size:n}=v(),{isMobile:e}=g(),t=r||63;return(0,u.useMemo)(()=>e?null:n.height>=1200?1e3-t:n.height<=768?n.height-t-32:n.height-t-200,[n,e,t])},j=(r,n)=>{let e=(0,u.useRef)(null);(0,u.useEffect)(()=>{let t=r.current;return t&&(e.current=new ResizeObserver(c=>{for(let h=0;h<c.length;h++){let f=c[h];if(f.contentRect){let z=f.contentRect;n(z);return}}}),e.current.observe(t)),()=>{e.current&&e.current.unobserve(t)}},[n,r])};export{E as a,y as b,j as c};
+
+window.inOKXExtension = true;
+window.inMiniApp = false;
+window.ASSETS_BUILD_TYPE = "publish";
+
+//# sourceMappingURL=chunk-6QDAK6XJ.js.map

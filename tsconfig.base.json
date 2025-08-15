@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "baseUrl": ".",
+    "paths": {
+      "@lulucat/exceptions": ["packages/exceptions/index.ts"],
+      "@lulucat/exceptions/*": ["packages/exceptions/*"],
+      "@lulucat/tdk": ["packages/tdk/index.ts"],
+      "@lulucat/tdk/*": ["packages/tdk/*"]
+    }
+  }
+}

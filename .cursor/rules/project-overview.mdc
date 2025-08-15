@@ -1,0 +1,79 @@
+---
+description: 项目概述、项目技术栈说明、项目目录结构说明
+globs: 
+alwaysApply: false
+---
+## 项目概述
+
+LuluCat 是一个专注于区块链领域的任务自动化执行项目，支持多个社交媒体账户和钱包账户统一管理、队列驱动的任务自动化执行、浏览器环境自动化控制和隔离管理。
+
+## 技术栈
+
+- **后端框架**: NestJS (Node.js)
+- **ORM框架**: TypeORM
+- **编程语言**: TypeScript
+- **浏览器自动化**: Playwright
+- **任务队列管理**: better-queue
+- **数据库**: MySQL
+
+## 项目结构
+
+### 后端 (service)
+
+  ┌── assets/ - 静态资源文件
+  ├── chromium/ - Chromium浏览器相关文件
+  ├── docs/ - 项目文档
+  ├── scripts/ - 脚本文件
+  ├── src/ - 源代码目录
+  │   ├── common/ - 公共模块，包含共享组件
+  │   │   ├── decorators/ - 自定义装饰器
+  │   │   ├── dto/ - 数据传输对象
+  │   │   ├── filters/ - 异常过滤器
+  │   │   ├── guards/ - 认证守卫
+  │   │   ├── interceptors/ - 拦截器
+  │   │   ├── interfaces/ - 接口定义
+  │   │   ├── logger/ - 日志服务
+  │   │   ├── middleware/ - 中间件
+  │   │   ├── pipes/ - 验证管道
+  │   │   ├── services/ - 通用服务
+  │   │   ├── types/ - 通用类型定义
+  │   │   └── utils/ - 工具函数
+  │   ├── config/ - 应用配置
+  │   ├── migrations/ - 数据库迁移文件
+  │   └── modules/ - 业务模块
+  │       ├── account-groups/ - 账户分组模块
+  │       ├── auth/ - 认证授权模块
+  │       ├── browser-contexts/ - 浏览器上下文管理
+  │       ├── browser-fingerprints/ - 浏览器指纹管理
+  │       ├── discord-accounts/ - Discord账户管理
+  │       ├── email-accounts/ - 邮箱账户管理
+  │       ├── evm-wallets/ - 以太坊钱包管理
+  │       ├── memory-tasks/ - 内存任务管理
+  │       ├── projects/ - 项目管理
+  │       ├── proxy-ips/ - 代理IP管理
+  │       ├── scripts/ - 自定义脚本管理
+  │       ├── task-engine/ - 任务执行引擎
+  │       │   ├── browser-context/ - 浏览器上下文
+  │       │   ├── queues/ - 队列管理
+  │       │   ├── scripts/ - 脚本执行
+  │       │   ├── types/ - 类型定义
+  │       │   └── workers/ - 工作进程
+  │       ├── task-logs/ - 任务日志管理
+  │       ├── task-results/ - 任务结果管理
+  │       ├── tasks/ - 任务管理
+  │       ├── twitter-accounts/ - Twitter账户管理
+  │       └── users/ - 用户管理
+  ├── task-result/ - 任务结果存储
+  └── test/ - 测试文件
+
+### 前端 (web)
+
+基于 Ant Design Pro 的 React 应用，对应后端模块提供了用户界面。
+
+## 核心功能
+
+1. **账户管理**: 支持Twitter、Discord、邮箱等多种账户类型的管理
+2. **钱包管理**: 支持EVM兼容的区块链钱包管理
+3. **任务自动化**: 基于Playwright实现的浏览器自动化任务执行
+4. **代理管理**: IP代理管理与账户关联
+5. **浏览器指纹**: 浏览器指纹管理，防止账户关联

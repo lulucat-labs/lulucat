@@ -1,0 +1,7 @@
+import{q as R}from"./chunk-APUK5GYS.js";import{f as C}from"./chunk-2LNDMD6C.js";import{o as B}from"./chunk-AUURQ3HI.js";import{d as i,f as b}from"./chunk-TKFT6XV3.js";import{la as P,ma as w}from"./chunk-2BGRD7AD.js";import{Jb as p,Kb as d,Pa as s,Rb as y,_a as f,bc as T,hc as k,ra as l}from"./chunk-Q23SA7M6.js";import{F as u,oa as h}from"./chunk-KBQXBPIW.js";import{f as N,o as a,q as e}from"./chunk-FJHLV356.js";a();e();b();f();k();function G(o){return d(T(p(+new Date,1e3),0),o)}async function K({fromAddress:o,body:t,walletId:r}){r??=await i().getWalletIdByAddress(o,l);let{TonWallet:n}=await C(),I=new n,W=await i().getTransactionBodyForSimulate(t,o,r),{seqno:_}=t,c={address:o,body:W,ignore_chksig:!0};if(y(_,"0")){let g=await i().getPublicKey(o,l,r),F={workChain:w,publicKey:g,walletVersion:P},m=await I.getWalletInformation(F);c={...c,init_code:m.initCode,init_data:m.initData}}return c}a();e();var z={TRANSFER:"transfer",JETTON_TRANSFER:"jettonTransfer"};a();e();var x=N(B());h();f();function D(){let o=R();return(0,x.useMemoizedFn)(async(t,r)=>{if(t.status===1&&!t.customPayload&&t.claimInfoUrl&&r===s){let n=await o(t.claimInfoUrl);return u(n)?{...t,getCustomPayloadInfoRpcError:!0}:{...t,...n,getCustomPayloadInfoRpcError:!1}}return{...t,getCustomPayloadInfoRpcError:!1}},[])}var Q=D;export{G as a,K as b,z as c,Q as d};
+
+window.inOKXExtension = true;
+window.inMiniApp = false;
+window.ASSETS_BUILD_TYPE = "publish";
+
+//# sourceMappingURL=chunk-FR4BVCBN.js.map

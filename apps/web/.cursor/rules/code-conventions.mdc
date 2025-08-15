@@ -1,0 +1,52 @@
+---
+alwaysApply: true
+---
+# LuluCat Web Code Conventions
+
+## General TypeScript Conventions
+- Use TypeScript's strict mode
+- Define interfaces and types in `.d.ts` files or at the top of component files
+- Use explicit type annotations for function parameters and return types
+- Use TypeScript's advanced features (generics, unions, etc.) where appropriate
+
+## React Component Conventions
+- Use functional components with hooks instead of class components
+- Use PascalCase for component names
+- Each component should be in its own file
+- Group related components in feature directories
+
+## State Management
+- Use React hooks (useState, useEffect, useContext) for state management
+- Custom hooks should be prefixed with "use" (e.g., useTaskPolling)
+- Keep component state as localized as possible
+- Use context for global state that needs to be shared across components
+
+## API Integration
+- API calls should be isolated in service files
+- Use typed request and response interfaces
+- Handle errors and loading states
+
+## Styling
+- Use Less for styling
+- Component-specific styles should be in the same directory as the component
+- Global styles in src/global.less
+
+## Form Handling
+- Use Ant Design Form components
+- Define form validation rules inline with form items
+- Use form hooks for complex validation logic
+
+## Error Handling
+- Use try/catch blocks for async operations
+- Log errors appropriately
+- Show user-friendly error messages
+
+## Comments and Documentation
+- Comment complex logic or business rules
+- Use JSDoc style comments for functions and components
+- Document props with TypeScript interfaces
+
+## Testing
+- Write tests for critical functionality
+- Place test files alongside the components they test
+- Use descriptive test names

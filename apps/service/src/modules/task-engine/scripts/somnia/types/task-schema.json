@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "register": {
+            "type": "boolean",
+            "title": "注册",
+            "description": "完成注册"
+        },
+        "authX": {
+            "type": "boolean",
+            "title": "认证X",
+            "description": "完成X账号认证"
+        },
+        "authDiscord": {
+            "type": "boolean",
+            "title": "认证Discord",
+            "description": "完成Discord账号认证"
+        },
+        "setUsername": {
+            "type": "boolean",
+            "title": "设置用户名",
+            "description": "设置账户用户名"
+        }
+    }
+}

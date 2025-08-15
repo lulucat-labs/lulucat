@@ -1,0 +1,32 @@
+---
+description: File Structure
+alwaysApply: false
+---
+# LuluCat Web File Structure
+
+## Key Files and Directories
+- [src/app.tsx](mdc:src/app.tsx) - Main application entry point
+- [src/access.ts](mdc:src/access.ts) - Access control configuration
+- [config/config.ts](mdc:config/config.ts) - Application configuration
+- [config/routes.ts](mdc:config/routes.ts) - Route definitions
+
+## Component Organization
+- [src/components/](mdc:src/components/) - Reusable components used across multiple pages
+  - Each component typically has its own directory with an index.tsx file
+
+## Page Structure
+- [src/pages/](mdc:src/pages/) - Page components organized by feature/route
+  - Each page typically has:
+    - index.tsx - Main page component
+    - components/ - Page-specific components
+    - data.d.ts - TypeScript type definitions for the page
+    - hooks/ - Custom hooks related to the page
+
+## Services
+- [src/services/](mdc:src/services/) - API service functions organized by domain
+  - Each service file corresponds to a backend API domain
+
+## Internationalization
+- [src/locales/](mdc:src/locales/) - Internationalization files
+  - Organized by language code (e.g., en-US, zh-CN)
+  - Further organized by feature (menu, pages, settings, etc.)

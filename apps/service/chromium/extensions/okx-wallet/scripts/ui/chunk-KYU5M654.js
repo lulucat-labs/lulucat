@@ -1,0 +1,7 @@
+import{Cb as x,Pb as h,ab as T,z as b,zb as M}from"./chunk-B32MCU7F.js";import{ia as y,ma as v}from"./chunk-N4B7HQY5.js";import{$ as W,Dc as m,Fc as A,Jc as D,Y as d,_a as R,qa as p}from"./chunk-Q23SA7M6.js";import{o as w,q as S}from"./chunk-FJHLV356.js";w();S();v();R();D();function ee(a,g={enableEmptyAccount:!1}){let u=h(a),f=M(a);return T(u,f,g)}var te=y(x,h,(a,g)=>{let{accountMap:u}=a,f={},o={},s=g.reduce((c,t)=>{let{localType:e,chainName:l,image:r,chainId:i,symbol:n,isHotNetwork:N,hotNetworkRank:C}=t;return e===d||e===W?(f[e]={chainName:l,chainId:i,image:r,symbol:n,isHotNetwork:N,hotNetworkRank:C,localType:e},c):e===p?(o.chainName=l,o.chainId=i,o.image=r,o.symbol=n,o.isHotNetwork=N,o.hotNetworkRank=C,o.localType=e,c):(u[e]&&c.push({address:u[e],chainName:l,chainId:i,image:r,symbol:n,isHotNetwork:N,hotNetworkRank:C,localType:e}),c)},[]),{accountsMap:E,segwitAddressType:B}=a,[,k]=b(s);[W,d].forEach(c=>{let t=E[d],e=f[c];if(t){let l=B[d]===m.SEGWIT_NESTED?m.SEGWIT_NESTED_49:m.SEGWIT_NESTED,r=A[d].reduce((i,n)=>(l!==n&&t[n]&&i.unshift({...e,address:t[n].address?t[n].address:e.address,addressType:n}),i),[]);r.reverse(),e?.isHotNetwork&&k.unshift({...r[0],moreAddress:r.slice(1)}),s=[...r,...s]}});let I=E[p];return I&&(s=[...A[p].reduce((t,e)=>(I[e]&&t.unshift({...o,address:I[e].address,addressType:e}),t),[]),...s]),{addresses:s,hotAddresses:k}});export{ee as a,te as b};
+
+window.inOKXExtension = true;
+window.inMiniApp = false;
+window.ASSETS_BUILD_TYPE = "publish";
+
+//# sourceMappingURL=chunk-KYU5M654.js.map

@@ -1,0 +1,7 @@
+import{a as T,c as s}from"./chunk-3PPHGVTH.js";import{k as d,o as E}from"./chunk-4HGOSSS7.js";import{D as f,aa as y}from"./chunk-WSXZYUQ4.js";import{cc as x}from"./chunk-B32MCU7F.js";import{a as M}from"./chunk-VLKJDIZ5.js";import{o as u}from"./chunk-E44TZGUB.js";import{M as g,O as S,w as r}from"./chunk-364XNTHB.js";import{a as w}from"./chunk-PDSGFBX4.js";import{f as n,o,q as l}from"./chunk-FJHLV356.js";o();l();var c=n(w()),i=n(x()),R=n(M());S();o();l();var W=e=>e[T],A=(e,a)=>W(e)[a];var h=()=>{let e=(0,i.useDispatch)(),a=(0,R.useHistory)(),D=E(),O=d(),{isOpen:C,accountId:p}=(0,i.useSelector)(t=>A(t,"REMOVE_ACCOUNT")),I=()=>{let t=new g;t.set("nextPath",y);let m=O(p),_=D(m.keyringId);_.walletIdentities.length===1?(t.set("actionType","removeLastWallet"),t.set("groupId",m.groupId)):(t.set("walletId",p),t.set("actionType","removeAccount"),t.set("groupId",_.walletIdentities[0].groupId)),a.replace(`${f}?${t.stringify()}`),e(s({type:"REMOVE_ACCOUNT"}))};return c.default.createElement(u.Tip,{visible:C,confirmText:r("wallet_extension_delete_dialog_btn_remove"),cancelText:r("commonall_text_btn_cancel"),onConfirm:I,onCancel:()=>{e(s({type:"REMOVE_ACCOUNT"}))},btnFull:!1},c.default.createElement("div",null,r("wallet_editwallet_alert_subtitle_delete_wallet_risk")))},H=h;export{H as a};
+
+window.inOKXExtension = true;
+window.inMiniApp = false;
+window.ASSETS_BUILD_TYPE = "publish";
+
+//# sourceMappingURL=chunk-2PL2P2CZ.js.map
