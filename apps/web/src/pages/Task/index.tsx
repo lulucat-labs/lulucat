@@ -29,7 +29,7 @@ const TaskList: React.FC = () => {
   const [taskLogs, setTaskLogs] = useState<string[]>([]);
   const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
   const [selectedRows, setSelectedRows] = useState<any[]>([]);
-  const [headless, setHeadless] = useState<boolean>(true);
+  const [headless, setHeadless] = useState<boolean>(false);
   const [invalidateModalVisible, setInvalidateModalVisible] = useState<boolean>(false);
   const [selectedAccountTypes, setSelectedAccountTypes] = useState<string[]>([]);
   const [selectedAccountType, setSelectedAccountType] = useState<string>('');
@@ -65,7 +65,7 @@ const TaskList: React.FC = () => {
     current: 1,
     pageSize: 10,
   });
-  
+
   const queryTaskList = async (page: number = pagination.current, size: number = pagination.pageSize) => {
     setLoading(true);
     getTaskList({
@@ -94,7 +94,7 @@ const TaskList: React.FC = () => {
       setLoading(false);
     });
   };
-  
+
   // 处理页面变化
   const handlePageChange = (page: number, pageSize: number) => {
     setPagination({ current: page, pageSize });
